@@ -1,55 +1,130 @@
-@charset "utf-8";
+@import "bourbon";
+@import "base/base";
+@import "neat";
 
-body {
-  background: #d4d4d4 url("../images/background.png");
-  text-align: center;
-  font-family: sans-serif; }
+$base-accent-color: #1478c2;
 
-h1 {
-  color: rgba(0, 0, 0, .3);
-  font-weight: bold;
-  font-size: 32px;
-  letter-spacing: -1px;
-  text-transform: uppercase;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
-  background: url("../images/middleman.png") no-repeat center 100px;
-  padding: 350px 0 10px;
-  margin: 0; }
+.hero {
+  $hero-background-top: $base-accent-color;
+  $hero-background-bottom: $base-accent-color;
+  $hero-color: white;
+  $gradient-angle: 0deg;
+  $hero-image: '../images/blue_wave-36.png';
+  //$hero-image: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png';
 
-.doc {
-  font-size: 14px;
-  margin: 0; }
-  .doc:before,
-  .doc:after {
-    opacity: .2;
-    padding: 6px;
-    font-style: normal;
-    position: relative;
-    content: "•"; }
-  .doc a {
-    color: rgba(0, 0, 0, 0.3); }
-    .doc a:hover {
-      color: #666; }
+  @include background(url($hero-image), linear-gradient($base-accent-color, $base-accent-color), no-repeat $hero-background-top scroll);
 
-.welcome {
-  -webkit-animation-name: welcome;
-  -webkit-animation-duration: .9s; }
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  padding-bottom: 4em;
 
-@-webkit-keyframes welcome {
-  from {
-    -webkit-transform: scale(0);
-    opacity: 0;
+  .hero-logo img {
+    height: 3em;
+    margin-bottom: 2.5em;
   }
-  50% {
-   -webkit-transform: scale(0);
-   opacity: 0;
-  }
-  82.5% {
-    -webkit-transform: scale(1.03);
-    -webkit-animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  to {
-    -webkit-transform: scale(1);
+
+  .hero-inner {
+    @include outer-container;
+    @include clearfix;
+    font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    padding: 3em;
+    margin: auto;
+    text-align: left;
+    color: $hero-color;
+
+
+    button {
+      @include button(simple, $base-background-color);
+      font-size: $base-font-size;
+      outline: none;
+    }
+
+    .hero-copy {
+      text-align: center;
+      font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT";
+
+
+      h1 {
+        font-size: 4em;
+        margin-bottom: .1em;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT";        
+        @include media($large-screen) {
+          font-size: 4.2em;
+        }
+      }
+
+      p {
+        color: #0E2745;
+        margin: auto;
+        margin-bottom: 3em;
+        font-weight: 200;
+        line-height: 1.4em;
+
+        @include media($large-screen) {
+          font-size: 1.1em;
+          max-width: 40%;
+        }
+      }
+    }
   }
 }
+
+
+// @charset "utf-8";
+//
+// body {
+//   background: #d4d4d4 url("../images/background.png");
+//   text-align: center;
+//   font-family: sans-serif; }
+//
+// h1 {
+//   color: rgba(0, 0, 0, .3);
+//   font-weight: bold;
+//   font-size: 32px;
+//   letter-spacing: -1px;
+//   text-transform: uppercase;
+//   text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+//   background: url("../images/middleman.png") no-repeat center 100px;
+//   padding: 350px 0 10px;
+//   margin: 0; }
+//
+// .doc {
+//   font-size: 14px;
+//   margin: 0; }
+//   .doc:before,
+//   .doc:after {
+//     opacity: .2;
+//     padding: 6px;
+//     font-style: normal;
+//     position: relative;
+//     content: "•"; }
+//   .doc a {
+//     color: rgba(0, 0, 0, 0.3); }
+//     .doc a:hover {
+//       color: #666; }
+//
+// .welcome {
+//   -webkit-animation-name: welcome;
+//   -webkit-animation-duration: .9s; }
+//
+// @-webkit-keyframes welcome {
+//   from {
+//     -webkit-transform: scale(0);
+//     opacity: 0;
+//   }
+//   50% {
+//    -webkit-transform: scale(0);
+//    opacity: 0;
+//   }
+//   82.5% {
+//     -webkit-transform: scale(1.03);
+//     -webkit-animation-timing-function: ease-out;
+//     opacity: 1;
+//   }
+//   to {
+//     -webkit-transform: scale(1);
+//   }
+// }
