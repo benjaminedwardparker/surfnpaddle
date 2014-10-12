@@ -269,27 +269,378 @@ input[type="submit"] {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 7, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+/* line 10, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+header.navigation {
+  background-color: transparent;
+  border-bottom: 1px solid transparent;
+  height: 60px;
+  width: 100%;
+  z-index: 999; }
+  /* line 32, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+  header.navigation .navigation-wrapper {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 9999; }
+    /* line 15, /Library/Ruby/Gems/2.0.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+    header.navigation .navigation-wrapper:after {
+      content: "";
+      display: table;
+      clear: both; }
+    /* line 15, /Library/Ruby/Gems/2.0.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+    header.navigation .navigation-wrapper:after {
+      content: "";
+      display: table;
+      clear: both; }
+  /* line 39, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+  header.navigation .logo {
+    float: left;
+    max-height: 60px;
+    padding-left: 1em;
+    padding-right: 2em; }
+    /* line 45, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+    header.navigation .logo img {
+      max-height: 60px;
+      padding: .8em 0; }
+  /* line 53, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+  header.navigation .navigation-menu-button {
+    color: #0E2745;
+    display: block;
+    float: right;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-weight: 700;
+    line-height: 60px;
+    margin: 0;
+    padding-right: 1em;
+    text-transform: uppercase; }
+    @media screen and (min-width: 53.75em) {
+      /* line 53, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+      header.navigation .navigation-menu-button {
+        display: none; } }
+    /* line 68, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+    header.navigation .navigation-menu-button:hover {
+      color: white; }
+  /* line 75, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+  header.navigation .nav {
+    z-index: 9999999;
+    float: none; }
+    @media screen and (min-width: 53.75em) {
+      /* line 75, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+      header.navigation .nav {
+        float: left; } }
+  /* line 83, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+  header.navigation ul#navigation-menu {
+    -webkit-transform-style: preserve-3d;
+    clear: both;
+    display: none;
+    margin: 0 auto;
+    overflow: visible;
+    padding: 0;
+    width: 100%;
+    z-index: 9999; }
+    @media screen and (min-width: 53.75em) {
+      /* line 83, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+      header.navigation ul#navigation-menu {
+        display: inline;
+        margin: 0;
+        padding: 0; } }
+  /* line 102, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+  header.navigation ul li.nav-link {
+    background: transparent;
+    display: block;
+    line-height: 60px;
+    overflow: hidden;
+    padding-right: .8em;
+    text-align: right;
+    width: 100%;
+    z-index: 9999; }
+    @media screen and (min-width: 53.75em) {
+      /* line 102, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+      header.navigation ul li.nav-link {
+        background: transparent;
+        display: inline;
+        line-height: 60px;
+        text-decoration: none;
+        width: auto; } }
+    /* line 120, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+    header.navigation ul li.nav-link a {
+      color: #0E2745;
+      display: inline-block;
+      font-weight: 400; }
+      @media screen and (min-width: 53.75em) {
+        /* line 120, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+        header.navigation ul li.nav-link a {
+          padding-right: 1em; } }
+      /* line 129, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+      header.navigation ul li.nav-link a:hover {
+        color: white; }
+  /* line 135, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+  header.navigation .active-nav-item a {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 3px; }
+  /* line 142, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+  header.navigation li.more.nav-link {
+    padding-right: 0; }
+    @media screen and (min-width: 53.75em) {
+      /* line 142, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+      header.navigation li.more.nav-link {
+        padding-right: 1em; } }
+    /* line 149, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+    header.navigation li.more.nav-link > ul > li:first-child a {
+      padding-top: 1em; }
+    /* line 153, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+    header.navigation li.more.nav-link a {
+      margin-right: 1em; }
+    /* line 157, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+    header.navigation li.more.nav-link > a {
+      padding-right: 0.6em; }
+    /* line 161, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+    header.navigation li.more.nav-link > a:after {
+      position: absolute;
+      top: auto;
+      right: -0.4em;
+      bottom: auto;
+      left: auto;
+      content: '\25BE';
+      color: #0E2745; }
+  /* line 168, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+  header.navigation li.more {
+    overflow: visible;
+    padding-right: 0; }
+    /* line 172, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+    header.navigation li.more a {
+      padding-right: .8em; }
+    /* line 176, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+    header.navigation li.more > a {
+      padding-right: 1.6em;
+      position: relative; }
+      @media screen and (min-width: 53.75em) {
+        /* line 176, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+        header.navigation li.more > a {
+          margin-right: 1em; } }
+      /* line 184, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+      header.navigation li.more > a:after {
+        content: '›';
+        font-size: 1.2em;
+        position: absolute;
+        right: 0.5em; }
+    /* line 192, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+    header.navigation li.more:hover > .submenu {
+      display: block; }
+    @media screen and (min-width: 53.75em) {
+      /* line 168, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+      header.navigation li.more {
+        padding-right: .8em;
+        position: relative; } }
+  /* line 202, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+  header.navigation ul.submenu {
+    display: none;
+    padding-left: 0; }
+    @media screen and (min-width: 53.75em) {
+      /* line 202, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+      header.navigation ul.submenu {
+        left: -1em;
+        position: absolute;
+        top: 1.5em; } }
+    @media screen and (min-width: 53.75em) {
+      /* line 212, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+      header.navigation ul.submenu .submenu {
+        left: 11.8em;
+        top: 0; } }
+    /* line 219, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+    header.navigation ul.submenu li {
+      display: block;
+      padding-right: 0; }
+      @media screen and (min-width: 53.75em) {
+        /* line 219, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+        header.navigation ul.submenu li {
+          line-height: 46.15385px; }
+          /* line 226, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+          header.navigation ul.submenu li:first-child > a {
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px; }
+          /* line 231, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+          header.navigation ul.submenu li:last-child > a {
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            padding-bottom: .7em; } }
+      /* line 238, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+      header.navigation ul.submenu li a {
+        background-color: transparent;
+        display: inline-block;
+        text-align: right;
+        width: 100%; }
+        @media screen and (min-width: 53.75em) {
+          /* line 238, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+          header.navigation ul.submenu li a {
+            background-color: transparent;
+            padding-left: 1em;
+            text-align: left;
+            width: 12em; } }
+  /* line 256, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+  header.navigation .navigation-tools {
+    display: block;
+    padding-right: 1em;
+    padding-left: 0.5em;
+    clear: both;
+    background: #505050; }
+    /* line 15, /Library/Ruby/Gems/2.0.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+    header.navigation .navigation-tools:after {
+      content: "";
+      display: table;
+      clear: both; }
+    @media screen and (min-width: 53.75em) {
+      /* line 256, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+      header.navigation .navigation-tools {
+        background: transparent;
+        float: right;
+        clear: none; } }
+  /* line 271, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+  header.navigation a.sign-up {
+    margin-top: 1.2em;
+    float: right;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    display: inline;
+    background: #1478c2;
+    border-radius: 3px;
+    color: white;
+    font-size: .8em;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: .4em .5em; }
+    @media screen and (min-width: 53.75em) {
+      /* line 271, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+      header.navigation a.sign-up {
+        padding: .5em 1em; } }
+    /* line 288, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+    header.navigation a.sign-up:hover {
+      background: #2193e8; }
+  /* line 295, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+  header.navigation .search-bar {
+    padding: .85em .6em;
+    float: left; }
+    /* line 302, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+    header.navigation .search-bar .search-and-submit {
+      float: right;
+      position: relative; }
+      /* line 306, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+      header.navigation .search-bar .search-and-submit input[type=search] {
+        background: rgba(13, 13, 13, 0);
+        border: 1px solid transparent;
+        padding: .6em .8em;
+        font-size: 1.5em;
+        color: #0E2745;
+        border-radius: 6px;
+        margin: 0; }
+        @media screen and (min-width: 53.75em) {
+          /* line 306, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+          header.navigation .search-bar .search-and-submit input[type=search] {
+            width: 100%; } }
+      /* line 321, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+      header.navigation .search-bar .search-and-submit button[type=submit] {
+        border: 1px solid rgba(3, 3, 3, 0);
+        border-radius: 3px;
+        box-shadow: inset 0 1px 0 0 rgba(77, 77, 77, 0);
+        color: white;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        background-color: rgba(38, 38, 38, 0);
+        background-image: -webkit-linear-gradient(rgba(38, 38, 38, 0), rgba(10, 10, 10, 0));
+        background-image: linear-gradient(rgba(38, 38, 38, 0), rgba(10, 10, 10, 0));
+        padding: 7px 18px;
+        text-decoration: none;
+        text-shadow: 0 1px 0 transparent;
+        background-clip: padding-box;
+        border: 1px solid rgba(3, 2, 2, 0);
+        border-radius: 3px;
+        box-shadow: inset 0 1px 0 0 rgba(77, 77, 77, 0);
+        color: white;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        background-color: rgba(38, 38, 38, 0);
+        background-image: -webkit-linear-gradient(rgba(38, 38, 38, 0), rgba(11, 9, 9, 0));
+        background-image: linear-gradient(rgba(38, 38, 38, 0), rgba(11, 9, 9, 0));
+        padding: 7px 18px;
+        text-decoration: none;
+        text-shadow: 0 1px 0 transparent;
+        background-clip: padding-box;
+        position: absolute;
+        top: 0.3em;
+        right: 0.3em;
+        bottom: 0.3em;
+        left: auto;
+        outline: none;
+        padding: 0 15px; }
+        /* line 131, /Library/Ruby/Gems/2.0.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_button.scss */
+        header.navigation .search-bar .search-and-submit button[type=submit]:hover:not(:disabled) {
+          box-shadow: inset 0 1px 0 0 rgba(51, 51, 51, 0);
+          cursor: pointer;
+          background-color: rgba(26, 26, 26, 0);
+          background-image: -webkit-linear-gradient(rgba(26, 26, 26, 0), rgba(3, 3, 3, 0));
+          background-image: linear-gradient(rgba(26, 26, 26, 0), rgba(3, 3, 3, 0)); }
+        /* line 147, /Library/Ruby/Gems/2.0.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_button.scss */
+        header.navigation .search-bar .search-and-submit button[type=submit]:active:not(:disabled), header.navigation .search-bar .search-and-submit button[type=submit]:focus:not(:disabled) {
+          border: 1px solid rgba(3, 3, 3, 0);
+          box-shadow: inset 0 0 8px 4px transparent, inset 0 0 8px 4px transparent; }
+        /* line 131, /Library/Ruby/Gems/2.0.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_button.scss */
+        header.navigation .search-bar .search-and-submit button[type=submit]:hover:not(:disabled) {
+          box-shadow: inset 0 1px 0 0 rgba(51, 51, 51, 0);
+          cursor: pointer;
+          background-color: rgba(26, 26, 26, 0);
+          background-image: -webkit-linear-gradient(rgba(26, 26, 26, 0), rgba(3, 2, 2, 0));
+          background-image: linear-gradient(rgba(26, 26, 26, 0), rgba(3, 2, 2, 0)); }
+        /* line 147, /Library/Ruby/Gems/2.0.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_button.scss */
+        header.navigation .search-bar .search-and-submit button[type=submit]:active:not(:disabled), header.navigation .search-bar .search-and-submit button[type=submit]:focus:not(:disabled) {
+          border: 1px solid rgba(3, 2, 2, 0);
+          box-shadow: inset 0 0 8px 4px transparent, inset 0 0 8px 4px transparent; }
+        /* line 51, /Library/Ruby/Gems/2.0.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_button.scss */
+        header.navigation .search-bar .search-and-submit button[type=submit]:disabled {
+          opacity: 0.5;
+          cursor: not-allowed; }
+        /* line 331, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+        header.navigation .search-bar .search-and-submit button[type=submit] img {
+          height: 2em; }
+    @media screen and (min-width: 53.75em) {
+      /* line 295, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+      header.navigation .search-bar {
+        width: 16em;
+        position: relative;
+        display: inline-block; }
+        /* line 343, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+        header.navigation .search-bar input {
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          display: block; } }
+
+/* line 358, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
 .hero {
   background: url("../images/blue_wave-36.png"), -webkit-linear-gradient(#1478c2, #1478c2), no-repeat #1478c2 scroll;
   background: url("../images/blue_wave-36.png"), linear-gradient(#1478c2, #1478c2), no-repeat #1478c2 scroll;
+  height: 32em;
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
   padding-bottom: 4em; }
-  /* line 22, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+  /* line 374, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
   .hero .hero-logo img {
     height: 3em;
-    margin-bottom: 2.5em; }
-  /* line 27, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+    margin-bottom: 2.5em;
+    display: inline; }
+  /* line 380, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
   .hero .hero-inner {
     max-width: 68em;
     margin-left: auto;
     margin-right: auto;
     font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-    padding: 3em;
+    padding: 1em;
     margin: auto;
-    text-align: left;
+    text-align: center;
     color: white; }
     /* line 15, /Library/Ruby/Gems/2.0.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
     .hero .hero-inner:after {
@@ -301,7 +652,7 @@ input[type="submit"] {
       content: "";
       display: table;
       clear: both; }
-    /* line 37, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+    /* line 390, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
     .hero .hero-inner button {
       border: 1px solid #dbdbdb;
       border-radius: 3px;
@@ -359,30 +710,321 @@ input[type="submit"] {
       .hero .hero-inner button:disabled {
         opacity: 0.5;
         cursor: not-allowed; }
-    /* line 43, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+    /* line 396, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
     .hero .hero-inner .hero-copy {
       text-align: center;
       font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT"; }
-      /* line 48, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+      /* line 401, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
       .hero .hero-inner .hero-copy h1 {
+        text-align: center;
         font-size: 4em;
         margin-bottom: .1em;
         font-weight: 300;
         text-transform: uppercase;
         font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT"; }
         @media screen and (min-width: 53.75em) {
-          /* line 48, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+          /* line 401, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
           .hero .hero-inner .hero-copy h1 {
             font-size: 4.2em; } }
-      /* line 59, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+      /* line 413, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
       .hero .hero-inner .hero-copy p {
         color: #0E2745;
         margin: auto;
         margin-bottom: 3em;
         font-weight: 200;
-        line-height: 1.4em; }
+        line-height: 1.4em;
+        display: inline; }
         @media screen and (min-width: 53.75em) {
-          /* line 59, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+          /* line 413, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
           .hero .hero-inner .hero-copy p {
             font-size: 1.1em;
             max-width: 40%; } }
+
+/* line 435, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+.side-image {
+  background: #F9F9F9;
+  height: 60em;
+  border-bottom: 1px solid rgba(6, 34, 55, 0.2); }
+  @media screen and (min-width: 53.75em) {
+    /* line 435, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+    .side-image {
+      display: table;
+      width: 100%;
+      table-layout: fixed; }
+      /* line 15, /Library/Ruby/Gems/2.0.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+      .side-image:after {
+        content: "";
+        display: table;
+        clear: both; } }
+  /* line 443, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+  .side-image .images-wrapper {
+    background-size: cover;
+    display: block;
+    min-height: 12em;
+    padding: 3em; }
+    @media screen and (min-width: 53.75em) {
+      /* line 443, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+      .side-image .images-wrapper {
+        display: table-cell;
+        width: 33.33333%;
+        background-position: center;
+        background-size: cover;
+        border-right: 1px solid rgba(6, 34, 55, 0.2); } }
+  /* line 460, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+  .side-image .content {
+    display: table-cell;
+    width: 100%;
+    padding: 1em 1em 4em 1em; }
+    @media screen and (min-width: 53.75em) {
+      /* line 460, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+      .side-image .content {
+        display: table-cell;
+        width: 66.66667%;
+        padding: 4em 4em 8em 4em; } }
+  /* line 470, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+  .side-image .content h1 {
+    margin-bottom: .9em; }
+  /* line 474, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+  .side-image .content h4 {
+    background: #1478c2;
+    color: white;
+    display: inline-block;
+    font-size: .75em;
+    font-weight: 800;
+    margin-bottom: 1.3em;
+    padding: 3px 8px;
+    text-transform: uppercase; }
+  /* line 485, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+  .side-image .content p {
+    color: gray;
+    margin-bottom: 3em; }
+  /* line 490, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+  .side-image .content button {
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 white;
+    color: #333333;
+    display: inline-block;
+    font-size: inherit;
+    font-weight: bold;
+    background-color: white;
+    background-image: -webkit-linear-gradient(white, #e3e3e3);
+    background-image: linear-gradient(white, #e3e3e3);
+    padding: 7px 18px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 white;
+    background-clip: padding-box;
+    border: 1px solid #dfd8d8;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 white;
+    color: #333333;
+    display: inline-block;
+    font-size: inherit;
+    font-weight: bold;
+    background-color: white;
+    background-image: -webkit-linear-gradient(white, #e5e0e0);
+    background-image: linear-gradient(white, #e5e0e0);
+    padding: 7px 18px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 white;
+    background-clip: padding-box;
+    font-size: 1em;
+    outline: none; }
+    /* line 131, /Library/Ruby/Gems/2.0.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_button.scss */
+    .side-image .content button:hover:not(:disabled) {
+      box-shadow: inset 0 1px 0 0 white;
+      cursor: pointer;
+      background-color: #f2f2f2;
+      background-image: -webkit-linear-gradient(#f2f2f2, #dbdbdb);
+      background-image: linear-gradient(#f2f2f2, #dbdbdb); }
+    /* line 147, /Library/Ruby/Gems/2.0.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_button.scss */
+    .side-image .content button:active:not(:disabled), .side-image .content button:focus:not(:disabled) {
+      border: 1px solid #dbdbdb;
+      box-shadow: inset 0 0 8px 4px #d4d4d4, inset 0 0 8px 4px #d4d4d4; }
+    /* line 131, /Library/Ruby/Gems/2.0.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_button.scss */
+    .side-image .content button:hover:not(:disabled) {
+      box-shadow: inset 0 1px 0 0 white;
+      cursor: pointer;
+      background-color: #f2f2f2;
+      background-image: -webkit-linear-gradient(#f2f2f2, #ded8d8);
+      background-image: linear-gradient(#f2f2f2, #ded8d8); }
+    /* line 147, /Library/Ruby/Gems/2.0.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_button.scss */
+    .side-image .content button:active:not(:disabled), .side-image .content button:focus:not(:disabled) {
+      border: 1px solid #dfd8d8;
+      box-shadow: inset 0 0 8px 4px #d7d1d1, inset 0 0 8px 4px #d7d1d1; }
+    /* line 51, /Library/Ruby/Gems/2.0.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_button.scss */
+    .side-image .content button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed; }
+
+@font-face {
+  font-family: 'WebOswald';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://themes.googleusercontent.com/static/fonts/oswald/v5/bH7276GfdCjMjApa_dkG6T8E0i7KZn-EPnyo3HZu7kw.woff) format("woff"); }
+/* line 509, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+.intro-text {
+  background: #F9F9F9;
+  min-height: 9.1em;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0 0 0 0;
+  text-align: center;
+  border-bottom: 1px solid rgba(6, 34, 55, 0.2); }
+  /* line 518, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+  .intro-text h2 {
+    color: #0E2745;
+    font-family: 'WebOswald', sans-serif;
+    font-weight: 300; }
+    @media screen and (min-width: 53.75em) {
+      /* line 518, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+      .intro-text h2 {
+        font-size: 4em;
+        padding-top: .5em;
+        padding-bottom: .5em; } }
+
+/* line 541, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+.grid-items-lines {
+  position: relative; }
+  /* line 15, /Library/Ruby/Gems/2.0.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+  .grid-items-lines:after {
+    content: "";
+    display: table;
+    clear: both; }
+  /* line 553, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+  .grid-items-lines .grid-item {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    height: 14em;
+    background: white;
+    width: 100%;
+    overflow: hidden;
+    float: left;
+    padding: 2em;
+    border-right: 1px solid rgba(51, 51, 51, 0.2);
+    border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+    cursor: pointer; }
+    @media screen and (min-width: 53.75em) {
+      /* line 553, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+      .grid-items-lines .grid-item {
+        width: 25%; } }
+    /* line 569, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+    .grid-items-lines .grid-item:hover {
+      background: rgba(51, 51, 51, 0.05); }
+  /* line 574, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+  .grid-items-lines .grid-item img {
+    display: block;
+    height: 2.5em;
+    margin-bottom: 1.2em;
+    opacity: .2; }
+  /* line 581, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+  .grid-items-lines .grid-item h1 {
+    color: #333;
+    font-size: 1.3em;
+    margin-bottom: .4em; }
+  /* line 587, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+  .grid-items-lines .grid-item p {
+    color: rgba(51, 51, 51, 0.6); }
+    @media screen and (min-width: 40em) {
+      /* line 587, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+      .grid-items-lines .grid-item p {
+        max-width: 70%; } }
+  @media screen and (min-width: 53.75em) {
+    /* line 594, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+    .grid-items-lines .grid-item-big {
+      width: 66.66667%; } }
+  @media screen and (min-width: 40em) {
+    /* line 598, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+    .grid-items-lines .grid-item-big p {
+      max-width: 60%; } }
+  /* line 606, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+  .grid-items-lines .bottom-cover {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 3px;
+    background: white; }
+  /* line 614, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+  .grid-items-lines .right-cover {
+    position: absolute;
+    right: 0px;
+    height: 100%;
+    width: 4px;
+    background: white; }
+
+/* line 653, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+.footer-2 {
+  background: #1b3c55;
+  padding: 1.5em;
+  width: 100%;
+  min-height: 6.2em;
+  margin: 0 0 0 0; }
+  /* line 665, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+  .footer-2 .footer-logo {
+    margin-right: 1em;
+    margin-bottom: 1em; }
+    @media screen and (min-width: 53.75em) {
+      /* line 665, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+      .footer-2 .footer-logo {
+        float: left;
+        margin-bottom: 0; } }
+  /* line 675, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+  .footer-2 .footer-logo img {
+    height: 1.6em; }
+  /* line 679, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+  .footer-2 ul {
+    margin-bottom: 1em; }
+    @media screen and (min-width: 53.75em) {
+      /* line 679, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+      .footer-2 ul {
+        float: left;
+        margin-left: 1em;
+        margin-bottom: 0; } }
+  /* line 688, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+  .footer-2 ul li {
+    padding-right: 1em;
+    font-weight: 800; }
+    @media screen and (min-width: 53.75em) {
+      /* line 688, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+      .footer-2 ul li {
+        display: inline;
+        text-align: left; } }
+  /* line 698, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+  .footer-2 ul li a {
+    color: rgba(255, 255, 255, 0.4); }
+    /* line 701, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+    .footer-2 ul li a:hover {
+      color: white; }
+  @media screen and (min-width: 53.75em) {
+    /* line 706, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+    .footer-2 .footer-secondary-links {
+      float: right; } }
+  /* line 711, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+  .footer-2 .footer-secondary-links li {
+    font-size: .8em;
+    font-weight: 400; }
+  /* line 716, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+  .footer-2 .footer-secondary-links ul.footer-social {
+    margin-top: 1em; }
+    @media screen and (min-width: 53.75em) {
+      /* line 716, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+      .footer-2 .footer-secondary-links ul.footer-social {
+        float: right;
+        margin-top: 0; } }
+    /* line 724, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+    .footer-2 .footer-secondary-links ul.footer-social li {
+      float: left;
+      font-size: 1em;
+      padding-right: .7em; }
+      /* line 729, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+      .footer-2 .footer-secondary-links ul.footer-social li:last-child {
+        padding-right: 0; }
+    /* line 734, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+    .footer-2 .footer-secondary-links ul.footer-social img {
+      opacity: .7;
+      height: 1.6em;
+      padding: 1px; }
+      /* line 739, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+      .footer-2 .footer-secondary-links ul.footer-social img:hover {
+        opacity: 1; }
