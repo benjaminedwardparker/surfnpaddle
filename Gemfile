@@ -14,3 +14,7 @@ gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 gem "tzinfo-data", platforms: [:mswin, :mingw]
 
 gem 'middleman-deploy', '~> 0.3.0'
+
+gem 'bourbon'
+gem 'neat'
+gem 'bitters'
