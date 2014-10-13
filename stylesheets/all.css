@@ -645,7 +645,7 @@ header.navigation {
     margin-left: auto;
     margin-right: auto;
     font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-    padding: 1em;
+    padding: 8em;
     margin: auto;
     text-align: center;
     color: white; }
@@ -924,8 +924,7 @@ header.navigation {
     display: block;
     height: 100%;
     width: 100%;
-    margin-bottom: 0;
-    opacity: .2; }
+    margin-bottom: 0; }
   /* line 588, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
   .grid-items-lines .grid-item h1 {
     color: #333;
