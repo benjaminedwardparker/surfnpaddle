@@ -1029,31 +1029,34 @@ header.navigation {
   /* line 745, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
   .footer-2 .footer-secondary-links li {
     border-right: 1px solid #d3d3d3;
-    padding-right: 3px;
+    padding-right: 6px;
     margin-right: 3px;
     font-size: .8em;
     font-weight: 400; }
   /* line 753, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+  .footer-2 .footer-secondary-links li:last-child {
+    border-right: 0; }
+  /* line 757, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
   .footer-2 .footer-secondary-links ul.footer-social {
     margin-top: 1em; }
     @media screen and (min-width: 53.75em) {
-      /* line 753, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+      /* line 757, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
       .footer-2 .footer-secondary-links ul.footer-social {
         float: right;
         margin-top: 0; } }
-    /* line 761, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+    /* line 765, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
     .footer-2 .footer-secondary-links ul.footer-social li {
       float: left;
       font-size: 1em;
       padding-right: .7em; }
-      /* line 766, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+      /* line 770, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
       .footer-2 .footer-secondary-links ul.footer-social li:last-child {
         padding-right: 0; }
-    /* line 771, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+    /* line 775, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
     .footer-2 .footer-secondary-links ul.footer-social img {
       opacity: .7;
       height: 1.6em;
       padding: 1px; }
-      /* line 776, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
+      /* line 780, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
       .footer-2 .footer-secondary-links ul.footer-social img:hover {
         opacity: 1; }
