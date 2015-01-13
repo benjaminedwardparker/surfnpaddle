@@ -948,7 +948,7 @@ header.navigation {
   .grid-items-lines .grid-item h1 {
     color: #333;
     font-size: 1.3em;
-    margin-bottom: .4em; }
+    margin: auto auto; }
   /* line 621, /Users/benjaminparker/ruby/rubylabs/surfnpaddle/source/stylesheets/all.css.scss */
   .grid-items-lines .grid-item p {
     color: rgba(51, 51, 51, 0.6); }
